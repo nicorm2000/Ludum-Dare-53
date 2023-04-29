@@ -29,5 +29,6 @@ namespace Movement
         {
             _movementInput = inputValue.Get<Vector2>() * speed;
         }
+        
     }
 }
