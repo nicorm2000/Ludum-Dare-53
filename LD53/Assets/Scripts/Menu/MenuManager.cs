@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using CameraFading;
 namespace Menu
 {
     public class MenuManager : MonoBehaviour
@@ -22,11 +22,12 @@ namespace Menu
             gameObject.SetActive(true);
             optionsMenu.SetActive(false);
             creditsMenu.SetActive(false);
+            playButton.onClick.AddListener(OnPlayButtonClick);
         }
 
         public void OnPlayButtonClick()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            CameraFade.Out(()=>SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1), 1, false, false);
         }
 
         public void OnOptionsButtonClick()
