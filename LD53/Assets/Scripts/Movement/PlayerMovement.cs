@@ -10,7 +10,6 @@ namespace Movement
 
         private Vector2 _movementInput;
 
-        
         [SerializeField] private float accSpeed;
         [SerializeField] private float maxSpeed;
         [SerializeField] private float decSpeed;
@@ -48,14 +47,11 @@ namespace Movement
             }
             _velocity += _movementInput.normalized * Mathf.Clamp(_movementInput.magnitude * accSpeed, -maxSpeed, maxSpeed);
             _rigidbody2D.velocity = _velocity;
-
-
         }
 
         private void OnMove(InputValue inputValue)
         {
             _movementInput = inputValue.Get<Vector2>().normalized;
         }
-        
     }
 }

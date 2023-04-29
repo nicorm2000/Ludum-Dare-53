@@ -17,14 +17,25 @@ public class SoulSpawner : MonoBehaviour
 
     private void Update()
     {
-        
+        if (timer > maxTime)
+        {
+            SpawnSoul();
+            timer = 0;
+        }
+
+        timer += Time.deltaTime;
     }
 
     private void SpawnSoul()
     {
         Vector3 spawnPos = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
-        GameObject soulGameObject = Instantiate(soul, spawnPos, Quaternion.identity);
 
-        Destroy(soulGameObject, 10f);
+        GameObject soul = ObjectPool.instance.GetPooledObject();
+
+        if (soul != null)
+        {
+            soul.transform.position = spawnPos;
+            soul.SetActive(true);
+        }
     }
 }
