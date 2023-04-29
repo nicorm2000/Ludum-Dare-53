@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -615,19 +615,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 413424640094946267, guid: 6a3a6008b33422b4ab807871eb5e6cbf, type: 3}
   m_PrefabInstance: {fileID: 1545654569}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &707035749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707035745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd9a34a5276bbb54f91c1cb6a2ed4acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPause: 0
 --- !u!1001 &814668110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -914,6 +901,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &970680268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1763794093586781229, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
+  m_PrefabInstance: {fileID: 1763794093953690213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &970680276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970680268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9a34a5276bbb54f91c1cb6a2ed4acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 707035745}
 --- !u!1001 &1545654569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,7 +1037,7 @@ PrefabInstance:
     - target: {fileID: 413424641553643676, guid: 6a3a6008b33422b4ab807871eb5e6cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 707035749}
+      objectReference: {fileID: 0}
     - target: {fileID: 413424641553643676, guid: 6a3a6008b33422b4ab807871eb5e6cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
@@ -1044,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: 413424641575381402, guid: 6a3a6008b33422b4ab807871eb5e6cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 707035749}
+      objectReference: {fileID: 0}
     - target: {fileID: 413424641575381402, guid: 6a3a6008b33422b4ab807871eb5e6cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMenu
@@ -1229,6 +1234,10 @@ PrefabInstance:
     - target: {fileID: 1763794093586781229, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763794093586781230, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
+      propertyPath: _pauseManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1763794093586781231, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
       propertyPath: m_RootOrder

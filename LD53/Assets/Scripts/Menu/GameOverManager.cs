@@ -5,14 +5,22 @@ namespace Menu
 {
     public class GameOverManager : MonoBehaviour
     {
+        public void GameOver()
+        {
+            Time.timeScale = 0;
+            //PauseManager.isPause = true;
+            gameObject.SetActive(true);
+        }
         public void RestartGame()
         {
-            //PauseMenu.isPause = false;
+            Time.timeScale = 1;
+            //PauseManager.isPause = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         public void LoadMenu()
         {
-            //PauseMenu.isPause = false;
+            Time.timeScale = 1;
+            //PauseManager.isPause = false;
             SceneManager.LoadScene(0);
         }
     }
