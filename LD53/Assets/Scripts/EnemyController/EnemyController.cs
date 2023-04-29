@@ -12,7 +12,7 @@ namespace EnemyController
             if (other.gameObject.CompareTag("Player"))
             {
                 Destroy(gameObject);
-                other.GetComponent<PlayerManager>().ModifyHp(damage);
+                other.GetComponent<PlayerManager>().ModifyHp(-damage);
             }
         }
     }
