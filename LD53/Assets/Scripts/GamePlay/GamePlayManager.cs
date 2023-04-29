@@ -1,35 +1,22 @@
 using UnityEngine;
 using Menu;
-public class GamePlayManager : MonoBehaviour
+public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 {
-    private static GamePlayManager instance;
     [SerializeField] private int score = 5;
     [SerializeField] private int hp = 3;
-    [SerializeField] private GameOverManager gameOverManager;
-
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
+    [SerializeField] private LevelProgress levelProgress = null;
+    [SerializeField] private int[] levelDuration = new int[8];
     void Start()
     {
+        levelProgress = new LevelProgress(()=> { GameOverManager.Get()?.GameOver(); },levelDuration[0]);
         CameraFading.CameraFade.In(3);
-        if(gameOverManager == null)
-        {
-            gameOverManager = FindObjectOfType<GameOverManager>();
-        }
     }
 
-    
+    private void Update()
+    {
+        levelProgress.Update();
+    }
+
     public void ModifyScore(int scoreModifier)
     {
         score += scoreModifier;
@@ -40,8 +27,7 @@ public class GamePlayManager : MonoBehaviour
         hp += hpModifier;
         if (hp <= 0)
         {
-            gameOverManager.GameOver();
+            GameOverManager.Get()?.GameOver();
         }
     }
-
 }

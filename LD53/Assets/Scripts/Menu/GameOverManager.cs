@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Menu
 {
-    public class GameOverManager : MonoBehaviour
+    public class GameOverManager : MonoBehaviourSingleton<GameOverManager>
     {
         public void GameOver()
         {

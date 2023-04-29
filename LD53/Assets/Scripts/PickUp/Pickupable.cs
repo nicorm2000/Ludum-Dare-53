@@ -32,7 +32,8 @@ namespace PickUp
             if (other.gameObject.CompareTag("Player"))
             {
                 gameObject.SetActive(false);
-                FindObjectOfType<GamePlayManager>().ModifyHp(scoreIncrease);
+                
+                GamePlayManager.Get().ModifyHp(scoreIncrease);
             }
         }
     }
