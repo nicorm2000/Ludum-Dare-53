@@ -13,7 +13,7 @@ namespace PickUp
             if (other.gameObject.CompareTag("Player"))
             {
                 Destroy(gameObject);
-                other.GetComponent<PlayerManager>().ModifyScore(scoreIncrease);
+                other.GetComponent<PlayerManager>().ModifyHp(scoreIncrease);
             }
         }
     }
