@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Menu
 {
@@ -24,7 +25,7 @@ namespace Menu
             _pauseAction.Disable();
         }
 
-        private void OnPause(InputAction.CallbackContext context)
+        public void OnPause(InputAction.CallbackContext context)
         {
             if (pauseMenu.activeSelf)
             {
@@ -36,16 +37,27 @@ namespace Menu
             }
         }
 
-        private void ResumeGame()
-        {
-            Time.timeScale = 1;
-            pauseMenu.SetActive(false);
-        }
-
         private void PauseGame()
         {
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
+        }
+
+        public void ResumeGame()
+        {
+            Time.timeScale = 1;
+            pauseMenu.SetActive(false);
+        }
+        
+        public void LoadMenu()
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(0);
+        }
+        
+        public void OnExitButtonClick()
+        {
+            Application.Quit();
         }
     }
 }
