@@ -36,16 +36,16 @@ namespace Menu
             }
         }
 
-        private void PauseGame()
-        {
-            Time.timeScale = 0;
-            pauseMenu.SetActive(true);
-        }
-
         private void ResumeGame()
         {
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
+        }
+
+        private void PauseGame()
+        {
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);
         }
     }
 }
