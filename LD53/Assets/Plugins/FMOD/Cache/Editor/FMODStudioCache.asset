@@ -1,26 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3088596333976412928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/musica.bank
-  m_EditorClassIdentifier: 
-  Path: C:/Users/julia/Downloads/cosa_random/cosa/Build/Desktop/musica.bank
-  Name: musica
-  StudioPath: bank:/musica
-  lastModified: 638183680002253662
-  FileSizes:
-  - Name: Desktop
-    Value: 1594272
-  Exists: 1
---- !u!114 &-2408090180315891934
+--- !u!114 &-7810303175759639165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/colision random
+  m_Name: "event:/remaci\xF3n"
   m_EditorClassIdentifier: 
-  Path: event:/colision random
+  Path: "event:/remaci\xF3n"
   Guid:
-    Data1: 1865387152
-    Data2: 1193761736
-    Data3: -311544666
-    Data4: -1070927953
+    Data1: 1030230831
+    Data2: 1240618986
+    Data3: -759648619
+    Data4: 431684958
   Banks:
-  - {fileID: 856171165617078367}
+  - {fileID: -317518841504936702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -47,6 +27,80 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5855421865397215030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/colision barco
+  m_EditorClassIdentifier: 
+  Path: event:/colision barco
+  Guid:
+    Data1: -1266316950
+    Data2: 1222699370
+    Data3: 544970425
+    Data4: 1591096198
+  Banks:
+  - {fileID: -317518841504936702}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5326770965203983106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/absorber alma
+  m_EditorClassIdentifier: 
+  Path: event:/absorber alma
+  Guid:
+    Data1: -810196549
+    Data2: 1290059315
+    Data3: -1144996205
+    Data4: 1728614615
+  Banks:
+  - {fileID: -317518841504936702}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-317518841504936702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/sfx.bank
+  Name: sfx
+  StudioPath: bank:/sfx
+  lastModified: 638184001049780698
+  FileSizes:
+  - Name: Desktop
+    Value: 132096
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,21 +114,25 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7628612485527050611}
-  - {fileID: 3064673919342660264}
-  - {fileID: -3088596333976412928}
-  - {fileID: 856171165617078367}
+  - {fileID: 6600540991790184252}
+  - {fileID: 6824923600062442767}
+  - {fileID: 7198655925885300379}
+  - {fileID: -317518841504936702}
   EditorEvents:
-  - {fileID: 7862629772232702017}
-  - {fileID: -2408090180315891934}
+  - {fileID: 7083462288885915006}
+  - {fileID: 3283567992021727023}
+  - {fileID: -7810303175759639165}
+  - {fileID: -5855421865397215030}
+  - {fileID: 2561157414280314528}
+  - {fileID: -5326770965203983106}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3064673919342660264}
+  - {fileID: 6824923600062442767}
   StringsBanks:
-  - {fileID: 7628612485527050611}
-  cacheTime: 638183680002874251
+  - {fileID: 6600540991790184252}
+  cacheTime: 638184001049780698
   cacheVersion: 131603
---- !u!114 &856171165617078367
+--- !u!114 &2561157414280314528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,18 +141,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/sfx.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/select button
   m_EditorClassIdentifier: 
-  Path: C:/Users/julia/Downloads/cosa_random/cosa/Build/Desktop/sfx.bank
-  Name: sfx
-  StudioPath: bank:/sfx
-  lastModified: 638183680002874251
-  FileSizes:
-  - Name: Desktop
-    Value: 15008
-  Exists: 1
---- !u!114 &3064673919342660264
+  Path: event:/select button
+  Guid:
+    Data1: -1161033800
+    Data2: 1234811043
+    Data3: -357855816
+    Data4: -1680150054
+  Banks:
+  - {fileID: -317518841504936702}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3283567992021727023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,18 +168,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/musica menu
   m_EditorClassIdentifier: 
-  Path: C:/Users/julia/Downloads/cosa_random/cosa/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638183679974970706
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &7628612485527050611
+  Path: event:/musica menu
+  Guid:
+    Data1: 1662062159
+    Data2: 1119653172
+    Data3: 1968240289
+    Data4: -1019551412
+  Banks:
+  - {fileID: 7198655925885300379}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6600540991790184252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,15 +198,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/julia/Downloads/cosa_random/cosa/Build/Desktop/Master.strings.bank
+  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638183679974990730
+  lastModified: 638184001047440385
   FileSizes:
   - Name: Desktop
-    Value: 908
+    Value: 1090
   Exists: 1
---- !u!114 &7862629772232702017
+--- !u!114 &6824923600062442767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638184001047370320
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &7083462288885915006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,20 +236,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/musica
+  m_Name: event:/musica gameplay
   m_EditorClassIdentifier: 
-  Path: event:/musica
+  Path: event:/musica gameplay
   Guid:
-    Data1: 520386270
-    Data2: 1114806528
-    Data3: -845227119
-    Data4: -1922520002
+    Data1: 2080937281
+    Data2: 1287886010
+    Data3: -469284939
+    Data4: -1714327095
   Banks:
-  - {fileID: -3088596333976412928}
-  IsStream: 1
+  - {fileID: 7198655925885300379}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 52000
+  Length: 0
+--- !u!114 &7198655925885300379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/musica.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/musica.bank
+  Name: musica
+  StudioPath: bank:/musica
+  lastModified: 638184001047860768
+  FileSizes:
+  - Name: Desktop
+    Value: 1848
+  Exists: 1
