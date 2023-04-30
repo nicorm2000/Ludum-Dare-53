@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1d137687-f632-4165-a1fd-34d0b58fec98}">
+		<property name="assetPath">
+			<value>temav4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>45.25714285714286</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0ed0396-238e-4e8f-bcaa-c09b9715f8c4}</destination>
+		</relationship>
+	</object>
+</objects>

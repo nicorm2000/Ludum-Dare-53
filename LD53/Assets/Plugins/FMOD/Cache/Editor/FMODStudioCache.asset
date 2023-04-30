@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD/ludum 53/Build/Desktop/musica.bank
   Name: musica
   StudioPath: bank:/musica
-  lastModified: 638184043205493949
+  lastModified: 638184700869107621
   FileSizes:
   - Name: Desktop
-    Value: 1848
+    Value: 1112672
   Exists: 1
 --- !u!114 &-7810303175759639165
 MonoBehaviour:
@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: Assets/FMOD/ludum 53/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638184043205424136
+  lastModified: 638184001047370320
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -136,7 +136,7 @@ MonoBehaviour:
   Path: Assets/FMOD/ludum 53/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638184043205533842
+  lastModified: 638184509256704152
   FileSizes:
   - Name: Desktop
     Value: 132096
@@ -165,12 +165,13 @@ MonoBehaviour:
   - {fileID: -5855421865397215030}
   - {fileID: 2561157414280314528}
   - {fileID: -5326770965203983106}
+  - {fileID: 7439072966538264410}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5545386105183578963}
   StringsBanks:
   - {fileID: 5777510930594186653}
-  cacheTime: 638184043205533842
+  cacheTime: 638184700869107621
   cacheVersion: 131603
 --- !u!114 &2561157414280314528
 MonoBehaviour:
@@ -221,11 +222,11 @@ MonoBehaviour:
   - {fileID: -8455188550695969169}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 25043
 --- !u!114 &5777510930594186653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,10 +242,10 @@ MonoBehaviour:
   Path: Assets/FMOD/ludum 53/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638184043205454056
+  lastModified: 638184700869017533
   FileSizes:
   - Name: Desktop
-    Value: 1090
+    Value: 1134
   Exists: 1
 --- !u!114 &7083462288885915006
 MonoBehaviour:
@@ -260,10 +261,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/musica gameplay
   Guid:
-    Data1: 2080937281
-    Data2: 1287886010
-    Data3: -469284939
-    Data4: -1714327095
+    Data1: -1727013828
+    Data2: 1167827526
+    Data3: 2086591148
+    Data4: 843660390
+  Banks:
+  - {fileID: -8455188550695969169}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 45257
+--- !u!114 &7439072966538264410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tema derrota
+  m_EditorClassIdentifier: 
+  Path: event:/Tema derrota
+  Guid:
+    Data1: -744381286
+    Data2: 1197904606
+    Data3: -487821915
+    Data4: 537937381
   Banks:
   - {fileID: -8455188550695969169}
   IsStream: 0
@@ -272,4 +300,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 16457

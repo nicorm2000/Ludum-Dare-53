@@ -113,7 +113,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{fac963ec-8200-4279-ab9c-c1946efb2c38}</destination>
+			<destination>{e7eaef1b-65b8-42be-affd-8bb34ae09cdc}</destination>
 		</relationship>
 		<relationship name="sounds">
 			<destination>{95460580-15d5-4e88-8d09-3a70e4704ae6}</destination>
@@ -131,7 +131,7 @@
 	</object>
 	<object class="MixerBusFader" id="{6437e2df-fe4d-424c-b8f7-7e50eee8f552}" />
 	<object class="SpatialiserEffect" id="{81fe7211-dd9b-4a02-b4e1-97ccb2e19ba5}" />
-	<object class="ADSRModulator" id="{fac963ec-8200-4279-ab9c-c1946efb2c38}">
+	<object class="ADSRModulator" id="{e7eaef1b-65b8-42be-affd-8bb34ae09cdc}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
@@ -145,7 +145,7 @@
 			<value>0</value>
 		</property>
 		<property name="decayTime">
-			<value>980</value>
+			<value>580</value>
 		</property>
 		<property name="sustainValue">
 			<value>-80</value>

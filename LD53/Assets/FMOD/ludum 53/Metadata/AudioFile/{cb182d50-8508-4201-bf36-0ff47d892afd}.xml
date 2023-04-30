@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cb182d50-8508-4201-bf36-0ff47d892afd}">
+		<property name="assetPath">
+			<value>derrotav1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16.457142857142856</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0ed0396-238e-4e8f-bcaa-c09b9715f8c4}</destination>
+		</relationship>
+	</object>
+</objects>
