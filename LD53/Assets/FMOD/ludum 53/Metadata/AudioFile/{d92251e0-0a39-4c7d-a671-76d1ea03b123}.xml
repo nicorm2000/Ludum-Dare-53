@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d92251e0-0a39-4c7d-a671-76d1ea03b123}">
+		<property name="assetPath">
+			<value>remacion_2.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7767800453514739</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0ed0396-238e-4e8f-bcaa-c09b9715f8c4}</destination>
+		</relationship>
+	</object>
+</objects>
