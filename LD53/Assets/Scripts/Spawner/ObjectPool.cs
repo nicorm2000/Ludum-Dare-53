@@ -6,11 +6,9 @@ public class ObjectPool : MonoBehaviour
 {
     public static ObjectPool instance;
 
+    [SerializeField]
     private List<GameObject> pooledObjects = new List<GameObject>();
-    [SerializeField] int amountToPool = 10;
-
-    [SerializeField] GameObject prefabToSpawn;
-
+    
     private void Awake()
     {
         if (instance == null)
@@ -18,27 +16,24 @@ public class ObjectPool : MonoBehaviour
             instance = this;
         }
     }
-
-    private void Start()
-    {
-        for (int i = 0; i < amountToPool; i++)
-        {
-            GameObject obj = Instantiate(prefabToSpawn);
-            obj.SetActive(false);
-            pooledObjects.Add(obj);
-        }
-    }
-
+    
     public GameObject GetPooledObject()
     {
-        for (int i = 0; i < pooledObjects.Count; i++)
+        int maxIterations=0;
+        GameObject objectToReturn = null;
+        while (objectToReturn == null)
         {
-            if (!pooledObjects[i].activeInHierarchy)
+            int random = Random.Range(0, pooledObjects.Count);
+            maxIterations++;
+            if (maxIterations == 100)
             {
-                return pooledObjects[i];
+                return null;
+            }
+            if (!pooledObjects[random].activeInHierarchy)
+            {
+                return pooledObjects[random];
             }
         }
-
         return null;
     }
 }
