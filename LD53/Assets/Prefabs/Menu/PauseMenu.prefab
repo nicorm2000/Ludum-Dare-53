@@ -26,7 +26,7 @@ RectTransform:
   m_GameObject: {fileID: 413424640000223553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.21383, y: 0.21383, z: 0.21383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 413424641500895397}
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 89.020744, y: 89.9}
-  m_SizeDelta: {x: -211.4356, y: 121.123505}
+  m_AnchoredPosition: {x: 89.02075, y: 89.9}
+  m_SizeDelta: {x: -1124.7029, y: 20.935}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413424640000223559
 MonoBehaviour:
@@ -119,7 +119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &413424640094946267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -253,10 +253,10 @@ RectTransform:
   m_Father: {fileID: 413424641774769038}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.39990234, y: -3.699997}
-  m_SizeDelta: {x: 182.734, y: 54.681}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.4000244, y: -0.6000004}
+  m_SizeDelta: {x: 28.7028, y: 7.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &413424640822928520
 CanvasRenderer:
@@ -456,7 +456,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu.PauseManager, Assembly-CSharp
-        m_MethodName: Resume
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -633,7 +633,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.00024414062, y: -1}
   m_SizeDelta: {x: -0.00012207, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
