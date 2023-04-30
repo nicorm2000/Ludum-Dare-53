@@ -72,3 +72,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 LD53/.vsconfig
 LD53/Assets/StreamingAssets/
+LD53/fmod_editor.log
