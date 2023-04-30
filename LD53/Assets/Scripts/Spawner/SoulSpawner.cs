@@ -4,38 +4,47 @@ using UnityEngine;
 
 public class SoulSpawner : MonoBehaviour
 {
-    [SerializeField] float maxTime = 1.5f;
+    [SerializeField] ObjectPool soulPool;
+    [SerializeField] ObjectPool obstaclePool;
+
+    [SerializeField] float maxTimeSoul = 5f;
+    [SerializeField] float maxTimeObstacle = 5f;
     [SerializeField] float heightRange = 0.5f;
-    [SerializeField] GameObject soul;
 
     float timer;
 
     private void Start()
     {
-        SpawnSoul();
+        Spawn();
     }
 
     private void Update()
     {
-        if (timer > maxTime)
+        if (timer > maxTimeSoul)
         {
-            SpawnSoul();
+            Spawn();
+            timer = 0;
+        }
+
+        if (timer > maxTimeObstacle)
+        {
+            Spawn();
             timer = 0;
         }
 
         timer += Time.deltaTime;
     }
 
-    private void SpawnSoul()
+    private void Spawn(ObjectPool pool)
     {
         Vector3 spawnPos = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
 
-        GameObject soul = ObjectPool.instance.GetPooledObject();
+        GameObject pooledObject = pool.GetPooledObject();
 
-        if (soul != null)
+        if (pooledObject != null)
         {
-            soul.transform.position = spawnPos;
-            soul.SetActive(true);
+            pooledObject.transform.position = spawnPos;
+            pooledObject.SetActive(true);
         }
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5486958933646783085}
   - component: {fileID: 5486958933646783083}
   - component: {fileID: 5319114635447936644}
+  - component: {fileID: -677652496163179064}
   m_Layer: 0
   m_Name: HandObstacle 3
   m_TagString: Untagged
@@ -110,9 +111,22 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -2.3829112, y: -1.1485919}
   m_Size: {x: 10.320201, y: 1.6458743}
   m_Direction: 1
+--- !u!114 &-677652496163179064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486958933646783082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14902a3895e48d48adc2ccb987276f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
