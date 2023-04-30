@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b52a051312a0ffd4c86fb31a3130a5f9
+guid: 524da31fcb3a0e84bb45a877fca9af5c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player character rowing_0
+      name: Remando01-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 644ff224ed37bb14691e5364864a60ff
-      internalID: 1225043366
+      spriteID: 3af8e853a22c9c24aa88ada924ca5940
+      internalID: 318921221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player character rowing_1
+      name: Remando01-Sheet_1
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1280
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c00176ace7618b4ab6a85b0c8701a27
-      internalID: 1788151665
+      spriteID: 44b2a1d9d2e93774696c8dd41d0b9e04
+      internalID: -2004199130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player character rowing_2
+      name: Remando01-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c158b18074945674d9131542b6247884
+      internalID: 1523971553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remando01-Sheet_3
       rect:
         serializedVersion: 2
         x: 3840
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d530ee7e5df6a58498b16e980759d246
-      internalID: -1504244223
+      spriteID: ff986a4347fefe041bdef2245fa265c4
+      internalID: -1026568553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player character rowing_3
+      name: Remando01-Sheet_4
       rect:
         serializedVersion: 2
-        x: 5760
+        x: 5120
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b26a40736de8c124c8bfda3c9c23b158
-      internalID: 1639687004
+      spriteID: 906d04f7cac75c441bfc93967c27aa62
+      internalID: -1326892061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player character rowing_4
+      name: Remando01-Sheet_5
       rect:
         serializedVersion: 2
-        x: 7680
+        x: 6400
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 1280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,29 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3820a42dfdc653240b48806240512da3
-      internalID: 923430412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player character rowing_5
-      rect:
-        serializedVersion: 2
-        x: 9600
-        y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 903fcbdf90c30f240babc3e55545d4b1
-      internalID: 1112924185
+      spriteID: 1c1fe68d39023c44997f63252d413f73
+      internalID: 1957097473
       vertices: []
       indices: 
       edges: []
@@ -233,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5b9e15937c9b36b4cb031fb8d60f3cd8
     internalID: 0
     vertices: []
     indices: 
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player character rowing_0: 1225043366
-      player character rowing_1: 1788151665
-      player character rowing_2: -1504244223
-      player character rowing_3: 1639687004
-      player character rowing_4: 923430412
-      player character rowing_5: 1112924185
+      Remando01-Sheet_0: 318921221
+      Remando01-Sheet_1: -2004199130
+      Remando01-Sheet_2: 1523971553
+      Remando01-Sheet_3: -1026568553
+      Remando01-Sheet_4: -1326892061
+      Remando01-Sheet_5: 1957097473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

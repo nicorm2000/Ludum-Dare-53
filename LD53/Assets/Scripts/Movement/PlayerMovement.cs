@@ -10,6 +10,11 @@ namespace Movement
 
         private Vector2 _movementInput;
 
+        [Header("Animation")]
+        [SerializeField] Animator animator;
+
+
+        [Header("Movement Speed")]
         [SerializeField] private float accSpeed;
         [SerializeField] private float maxSpeed;
         [SerializeField] private float decSpeed;
@@ -17,6 +22,11 @@ namespace Movement
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+        }
+
+        private void Start()
+        {
+            animator = GetComponent<Animator>();
         }
 
         private void FixedUpdate()
@@ -47,6 +57,9 @@ namespace Movement
             }
             _velocity += _movementInput.normalized * Mathf.Clamp(_movementInput.magnitude * accSpeed, -maxSpeed, maxSpeed);
             _rigidbody2D.velocity = _velocity;
+
+            //Animation trigger
+            animator.SetFloat("Movement Input", _movementInput.x);
         }
 
         private void OnMove(InputValue inputValue)
