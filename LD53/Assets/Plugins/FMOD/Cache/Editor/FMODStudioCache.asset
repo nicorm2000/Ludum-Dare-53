@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8455188550695969169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/musica.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/ludum 53/Build/Desktop/musica.bank
+  Name: musica
+  StudioPath: bank:/musica
+  lastModified: 638184043205493949
+  FileSizes:
+  - Name: Desktop
+    Value: 1848
+  Exists: 1
 --- !u!114 &-7810303175759639165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +39,7 @@ MonoBehaviour:
     Data3: -759648619
     Data4: 431684958
   Banks:
-  - {fileID: -317518841504936702}
+  - {fileID: -4721363483863322493}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -46,7 +66,7 @@ MonoBehaviour:
     Data3: 544970425
     Data4: 1591096198
   Banks:
-  - {fileID: -317518841504936702}
+  - {fileID: -4721363483863322493}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -54,6 +74,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5545386105183578963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/ludum 53/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638184043205424136
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
 --- !u!114 &-5326770965203983106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +113,7 @@ MonoBehaviour:
     Data3: -1144996205
     Data4: 1728614615
   Banks:
-  - {fileID: -317518841504936702}
+  - {fileID: -4721363483863322493}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -81,7 +121,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-317518841504936702
+--- !u!114 &-4721363483863322493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,10 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/sfx.bank
   m_EditorClassIdentifier: 
-  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/sfx.bank
+  Path: Assets/FMOD/ludum 53/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638184001049780698
+  lastModified: 638184043205533842
   FileSizes:
   - Name: Desktop
     Value: 132096
@@ -114,10 +154,10 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6600540991790184252}
-  - {fileID: 6824923600062442767}
-  - {fileID: 7198655925885300379}
-  - {fileID: -317518841504936702}
+  - {fileID: 5777510930594186653}
+  - {fileID: -5545386105183578963}
+  - {fileID: -8455188550695969169}
+  - {fileID: -4721363483863322493}
   EditorEvents:
   - {fileID: 7083462288885915006}
   - {fileID: 3283567992021727023}
@@ -127,10 +167,10 @@ MonoBehaviour:
   - {fileID: -5326770965203983106}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6824923600062442767}
+  - {fileID: -5545386105183578963}
   StringsBanks:
-  - {fileID: 6600540991790184252}
-  cacheTime: 638184001049780698
+  - {fileID: 5777510930594186653}
+  cacheTime: 638184043205533842
   cacheVersion: 131603
 --- !u!114 &2561157414280314528
 MonoBehaviour:
@@ -151,7 +191,7 @@ MonoBehaviour:
     Data3: -357855816
     Data4: -1680150054
   Banks:
-  - {fileID: -317518841504936702}
+  - {fileID: -4721363483863322493}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -178,7 +218,7 @@ MonoBehaviour:
     Data3: 1968240289
     Data4: -1019551412
   Banks:
-  - {fileID: 7198655925885300379}
+  - {fileID: -8455188550695969169}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -186,7 +226,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6600540991790184252
+--- !u!114 &5777510930594186653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,33 +238,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/Master.strings.bank
+  Path: Assets/FMOD/ludum 53/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638184001047440385
+  lastModified: 638184043205454056
   FileSizes:
   - Name: Desktop
     Value: 1090
-  Exists: 1
---- !u!114 &6824923600062442767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638184001047370320
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
   Exists: 1
 --- !u!114 &7083462288885915006
 MonoBehaviour:
@@ -245,7 +265,7 @@ MonoBehaviour:
     Data3: -469284939
     Data4: -1714327095
   Banks:
-  - {fileID: 7198655925885300379}
+  - {fileID: -8455188550695969169}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -253,23 +273,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7198655925885300379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/musica.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FmodProject/LD53Fmod/ludum 53/Build/Desktop/musica.bank
-  Name: musica
-  StudioPath: bank:/musica
-  lastModified: 638184001047860768
-  FileSizes:
-  - Name: Desktop
-    Value: 1848
-  Exists: 1
