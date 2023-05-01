@@ -40,7 +40,7 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         BackgroundLine2.GetComponent<BgTP>().speed = 0;
         MainPS = PS.main;
         PS.Stop();
-        MainPS.startSpeed = 0;
+        MainPS.startSpeed = 1;
         PS.Play();
         levelProgress = new LevelProgress(()=> { Win(); },levelDuration[0]);
         CameraFading.CameraFade.In(3);
@@ -99,9 +99,12 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     }
     private void InvokeCorrutine()
     {
-        PS.Stop();
-        MainPS.startSpeed = 1;
-        PS.Play();
+        if (MainPS.startSpeed.constant !=1 )
+        {
+            PS.Stop();
+            MainPS.startSpeed = 1;
+            PS.Play();
+        }
         Background1.GetComponent<BgTP>().speed = 0;
         Background2.GetComponent<BgTP>().speed = 0;
         BackgroundLine1.GetComponent<BgTP>().speed = 0;
@@ -112,6 +115,7 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 
     IEnumerator playerLerp()
     {
+        
         Vector3 pos = player.transform.position;
         Vector3 endpos = this.endpos.position;
         float cTime=0;

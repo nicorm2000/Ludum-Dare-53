@@ -6,6 +6,12 @@ namespace Menu
 {
     public class GameOverManager : MonoBehaviourSingleton<GameOverManager>
     {
+
+        private void Start()
+        {
+            text.text = new string(GameManager.Get().score + " Souls delivered!");
+        }
+
         [SerializeField] private TextMeshProUGUI text;
         public void GameOver()
         {
