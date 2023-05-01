@@ -8,8 +8,8 @@ namespace Movement
     {
         private Rigidbody2D _rigidbody2D;
 
-        private SpriteRenderer sR;
-        private SpriteRenderer sRboat;
+        [SerializeField] private SpriteRenderer sR;
+        [SerializeField] private SpriteRenderer sRboat;
 
         private Vector2 _movementInput;
 
@@ -26,9 +26,6 @@ namespace Movement
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
-            sR = GetComponent<SpriteRenderer>();
-            sRboat = gameObject.GetComponentsInChildren<SpriteRenderer>()[1];
-            Debug.Log(sRboat.name);
         }
 
         private void FixedUpdate()
