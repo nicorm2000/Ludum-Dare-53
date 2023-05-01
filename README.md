@@ -4,12 +4,6 @@ Deliver lost souls to the other side in this gloomy adventure on the Aqueronte r
 
 This is a game being developed by students from <a href="https://www.imagecampus.edu.ar/">Image Campus</a>
 
-<p align="center">
-  <a href="https://www.imagecampus.edu.ar/">
-    <img src="logo-image-campus.png" alt="Image Campus"/>
-  </a> 
-</p>
-
 
 ## Credits
 - **Julian Matias Aguirre Barrios** - *Programming*
