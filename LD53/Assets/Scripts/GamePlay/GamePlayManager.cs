@@ -16,12 +16,18 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private Animator puerto1;
     [SerializeField] private Animator puerto2;
     [SerializeField] private Transform endpos;
+    [SerializeField] private ParticleSystem PS;
+    private ParticleSystem.MainModule MainPS;
 
 
     [SerializeField] private GameObject[] onboardSouls;
 
     void Start()
     {
+        MainPS = PS.main;
+        PS.Stop();
+        MainPS.startSpeed = 0;
+        PS.Play();
         levelProgress = new LevelProgress(()=> { Win(); },levelDuration[0]);
         CameraFading.CameraFade.In(3);
         initPlayer();
@@ -44,6 +50,9 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         player.enabled = true;
         spawner.enabled = true;
         puerto1.Play("Start");
+        PS.Stop();
+        MainPS.startSpeed = 3;
+        PS.Play();
     }
 
     public void ModifyHp(int hpModifier)
