@@ -439,22 +439,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 818920179}
     m_Modifications:
-    - target: {fileID: 8711414768106294852, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414768106294852, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414768839722122, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -222
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414768839722125, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8711414769116983136, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -542,18 +526,6 @@ PrefabInstance:
     - target: {fileID: 8711414769116983139, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414769764422126, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414769764422127, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 442
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711414769764422127, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
