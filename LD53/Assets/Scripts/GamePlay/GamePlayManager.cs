@@ -2,10 +2,10 @@ using UnityEngine;
 using Menu;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 {
-    [SerializeField] private int score = 5;
     [SerializeField] private int hp = 3;
     [SerializeField] private LevelProgress levelProgress = null;
     [SerializeField] private int[] levelDuration = new int[8];
@@ -53,11 +53,6 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         player.enabled = true;
         spawner.enabled = true;
         puerto1.Play("Start");
-    }
-
-    public void ModifyScore(int scoreModifier)
-    {
-        score += scoreModifier;
     }
 
     public void ModifyHp(int hpModifier)
@@ -119,6 +114,8 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
             cTime += Time.deltaTime;
             yield return null;
         }
+        GameManager.Get().score = hp;
         Debug.Log("Game over");
+        SceneManager.LoadScene(2);
     }
 }
