@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8992276496178862299}
   - component: {fileID: 8992276496178862300}
   - component: {fileID: 8992276496178862301}
+  - component: {fileID: 187660544}
   m_Layer: 0
   m_Name: Soul 3
   m_TagString: Untagged
@@ -130,6 +131,37 @@ CapsuleCollider2D:
   m_Offset: {x: -0.56566554, y: -1.6571028}
   m_Size: {x: 8.449491, y: 8.449491}
   m_Direction: 0
+--- !u!114 &187660544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276496178862302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276496557184120
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +175,7 @@ GameObject:
   - component: {fileID: 8992276496557184101}
   - component: {fileID: 8992276496557184102}
   - component: {fileID: 8992276496557184103}
+  - component: {fileID: 1479298936}
   m_Layer: 0
   m_Name: Soul 5
   m_TagString: Untagged
@@ -260,6 +293,37 @@ CapsuleCollider2D:
   m_Offset: {x: 0.32472777, y: 0.27731776}
   m_Size: {x: 14.594785, y: 7.441237}
   m_Direction: 1
+--- !u!114 &1479298936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276496557184120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276496609217143
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +337,7 @@ GameObject:
   - component: {fileID: 8992276496609217140}
   - component: {fileID: 8992276496609217141}
   - component: {fileID: 8992276496609217142}
+  - component: {fileID: 664875309}
   m_Layer: 0
   m_Name: Soul 6
   m_TagString: Untagged
@@ -390,6 +455,37 @@ CapsuleCollider2D:
   m_Offset: {x: 0.38888115, y: -0.40694565}
   m_Size: {x: 13.440111, y: 8.809819}
   m_Direction: 1
+--- !u!114 &664875309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276496609217143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276497133710540
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +558,7 @@ GameObject:
   - component: {fileID: 8992276497304850647}
   - component: {fileID: 8992276497304850664}
   - component: {fileID: 8992276497304850665}
+  - component: {fileID: 581461651}
   m_Layer: 0
   m_Name: Soul 7
   m_TagString: Untagged
@@ -579,6 +676,37 @@ CapsuleCollider2D:
   m_Offset: {x: -0.033063218, y: -1.0056342}
   m_Size: {x: 8.809895, y: 6.158474}
   m_Direction: 1
+--- !u!114 &581461651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276497304850666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276497631494631
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +720,7 @@ GameObject:
   - component: {fileID: 8992276497631494628}
   - component: {fileID: 8992276497631494629}
   - component: {fileID: 8992276497631494630}
+  - component: {fileID: 623466679}
   m_Layer: 0
   m_Name: Soul 2
   m_TagString: Untagged
@@ -709,6 +838,37 @@ CapsuleCollider2D:
   m_Offset: {x: -0.28431335, y: -0.48479795}
   m_Size: {x: 6.7613745, y: 9.436851}
   m_Direction: 0
+--- !u!114 &623466679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276497631494631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276497998695232
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +882,7 @@ GameObject:
   - component: {fileID: 8992276497998695245}
   - component: {fileID: 8992276497998695246}
   - component: {fileID: 8992276497998695247}
+  - component: {fileID: 532993215}
   m_Layer: 0
   m_Name: Soul 1
   m_TagString: Untagged
@@ -839,6 +1000,37 @@ CapsuleCollider2D:
   m_Offset: {x: -0.28431335, y: -0.48479795}
   m_Size: {x: 6.7613745, y: 9.436851}
   m_Direction: 0
+--- !u!114 &532993215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276497998695232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8992276498221459264
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +1044,7 @@ GameObject:
   - component: {fileID: 8992276498221459277}
   - component: {fileID: 8992276498221459278}
   - component: {fileID: 8992276498221459279}
+  - component: {fileID: 1792206633}
   m_Layer: 0
   m_Name: Soul 4
   m_TagString: Untagged
@@ -969,3 +1162,34 @@ CapsuleCollider2D:
   m_Offset: {x: -0.16708376, y: -0.08621771}
   m_Size: {x: 11.216137, y: 8.168176}
   m_Direction: 1
+--- !u!114 &1792206633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992276498221459264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -810196549
+      Data2: 1290059315
+      Data3: -1144996205
+      Data4: 1728614615
+    Path: event:/absorber alma
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

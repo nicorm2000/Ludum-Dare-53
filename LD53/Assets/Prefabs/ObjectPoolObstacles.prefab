@@ -139,6 +139,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7300601d8af9d54caa47a2467fa9751, type: 3}
+--- !u!1 &5730523774709354856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: d7300601d8af9d54caa47a2467fa9751, type: 3}
+  m_PrefabInstance: {fileID: 262177545998787330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1165443247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5730523774709354856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &5730523774709354860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: d7300601d8af9d54caa47a2467fa9751, type: 3}
@@ -210,6 +246,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 99f333f57ab378745b6e214f5ffc7659, type: 3}
   m_PrefabInstance: {fileID: 732957685040954473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1928871478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048083513546247683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &5048083513546247687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: 99f333f57ab378745b6e214f5ffc7659, type: 3}
@@ -286,6 +353,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: e3ef347c560169845b4d5b6773285494, type: 3}
   m_PrefabInstance: {fileID: 1459724638578560076}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &257053392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6369325479650950694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2434843918065293500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -357,6 +455,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 7580bcc2a9556124fb2b5829006e7f7a, type: 3}
   m_PrefabInstance: {fileID: 2434843918065293500}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673429670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7921785224057416406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3250409796621691820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,6 +557,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 0cffe89ab5eb03c42aecb423fdeaf822, type: 3}
   m_PrefabInstance: {fileID: 3250409796621691820}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &691761390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007141876091967942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3730912065370955442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -494,6 +654,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 76fec9b61f7371f458aa11b678777145, type: 3}
   m_PrefabInstance: {fileID: 3730912065370955442}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1361406789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9215284946859175128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &9215284946859175132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: 76fec9b61f7371f458aa11b678777145, type: 3}
@@ -570,6 +761,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: fd2b1d0bdf67b9c4496f8db850e69cab, type: 3}
   m_PrefabInstance: {fileID: 4009756807437133445}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &267476902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8899144227277149423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &5508621688625220367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -641,6 +863,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: dd48a30cb674deb40bd9ade2353678de, type: 3}
   m_PrefabInstance: {fileID: 5508621688625220367}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1385842501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24512689693325669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &5782391139693684538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -707,6 +960,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 950a56c26e5cd694b95d0551a8536d08, type: 3}
   m_PrefabInstance: {fileID: 5782391139693684538}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &344592943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025131157206783312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &2025131157206783316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: 950a56c26e5cd694b95d0551a8536d08, type: 3}
@@ -783,6 +1067,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: d989f40018cbd344d90f7d1949146436, type: 3}
   m_PrefabInstance: {fileID: 5928658439216199167}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488415036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189676738063517589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &6544147682485804867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -849,6 +1164,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: b209c30215bb7934b8922709b0ec0456, type: 3}
   m_PrefabInstance: {fileID: 6544147682485804867}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &85584571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654197313262791977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1654197313262791981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: b209c30215bb7934b8922709b0ec0456, type: 3}
@@ -925,6 +1271,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 656f20b315009c340a659faec4f1d677, type: 3}
   m_PrefabInstance: {fileID: 6727146869416698381}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1053635392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260507049701838951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &6821805636898937220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -996,6 +1373,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 0302590875cda5a45b633f9d462be416, type: 3}
   m_PrefabInstance: {fileID: 6821805636898937220}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1275321883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337133688817871854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &7428375498777385166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1067,6 +1475,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 421f14f62a7f67e49b9a142041ec4009, type: 3}
   m_PrefabInstance: {fileID: 7428375498777385166}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &444711999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112968367132863140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &7624866494922510698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1133,6 +1572,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: e6e7b2653e22ab14c94a60462766ef3d, type: 3}
   m_PrefabInstance: {fileID: 7624866494922510698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &484981726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2735215193092940544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &2735215193092940548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5486958933646783086, guid: e6e7b2653e22ab14c94a60462766ef3d, type: 3}
@@ -1209,6 +1679,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 79cbd4ae747b83049ba80a48073df675, type: 3}
   m_PrefabInstance: {fileID: 8122009690533666479}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &12304977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364749846861982917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &8689162613602659365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1280,3 +1781,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5486958933646783082, guid: 4dac677a7a7ca0f4aa5ad74d979d1447, type: 3}
   m_PrefabInstance: {fileID: 8689162613602659365}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1663494598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797523256505278031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266316950
+      Data2: 1222699370
+      Data3: 544970425
+      Data4: 1591096198
+    Path: event:/colision barco
+  Event: 
+  PlayEvent: 5
+  StopEvent: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
