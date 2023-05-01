@@ -14,16 +14,19 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private Animator animPlayer;
     [SerializeField] private SoulSpawner spawner;
     [SerializeField] private GameObject[] souls;
-    private int currentSoul = -1;
+    [SerializeField] private Animator puerto1;
+    [SerializeField] private Animator puerto2;
+    [SerializeField] private Transform endpos;
 
 
     public GameObject[] hearts;
 
     void Start()
     {
-        levelProgress = new LevelProgress(()=> { GameOverManager.Get()?.GameOver(); },levelDuration[0]);
+        levelProgress = new LevelProgress(()=> { Win(); },levelDuration[0]);
         CameraFading.CameraFade.In(3);
         initPlayer();
+        
     }
 
     private void Update()
@@ -43,12 +46,13 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     {
         player.enabled = false;
         spawner.enabled = false;
-        Invoke("StartPlayer", 4);
+        Invoke("StartPlayer", 3);
     }
     private void StartPlayer()
     {
         player.enabled = true;
         spawner.enabled = true;
+        puerto1.Play("Start");
     }
 
     public void ModifyScore(int scoreModifier)
@@ -87,5 +91,34 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
                 hearts[2].gameObject.SetActive(true);
                 break;
         }
+    }
+    private void Win()
+    {
+        spawner.enabled = false;
+        if (puerto2!=null)
+        puerto2.Play("Start");
+        Invoke("InvokeCorrutine", 1);
+    }
+    private void InvokeCorrutine()
+    {
+        StartCoroutine(playerLerp());
+    }
+
+    IEnumerator playerLerp()
+    {
+        Vector3 pos = player.transform.position;
+        Vector3 endpos = this.endpos.position;
+        float cTime=0;
+        while (pos!=endpos)
+        {
+            if (cTime>=1)
+            {
+                cTime = 1;
+            }
+            player.transform.position = Vector3.Lerp(pos, endpos, cTime);
+            cTime += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log("Game over");
     }
 }
