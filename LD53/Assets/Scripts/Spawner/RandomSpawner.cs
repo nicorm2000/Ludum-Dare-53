@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-    [SerializeField] float speed = 2f;
+    public float speed = 2f;
 
     private void Update()
     {

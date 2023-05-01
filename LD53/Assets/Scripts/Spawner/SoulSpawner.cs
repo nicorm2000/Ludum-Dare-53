@@ -25,7 +25,7 @@ public class SoulSpawner : MonoBehaviour
         maxTimeObstacle = levelDuration * 0.98f / _levelEnemies;
        
         maxTimeSoul = levelDuration * 0.98f / _levelSouls;
-        speed = _speed;
+        speed = _speed-1;
         randomization = _randomization;
         
     }
@@ -36,13 +36,13 @@ public class SoulSpawner : MonoBehaviour
         {
             if (timerSoul > maxTimeSoul)
             {
-                Spawn(soulPool);
+                Spawn(soulPool,speed -1);
                 timerSoul = 0;
             }
 
             if (timerObstacle > maxTimeObstacle)
             {
-                Spawn(obstaclePool);
+                Spawn(obstaclePool, speed);
                 timerObstacle = Random.Range(0, randomization);
             }
 
@@ -54,12 +54,12 @@ public class SoulSpawner : MonoBehaviour
         
     }
 
-    private void Spawn(ObjectPool pool)
+    private void Spawn(ObjectPool pool,float speed)
     {
         Vector3 spawnPos = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
         GameObject pooledObject = pool.GetPooledObject();
         pooledObject.GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(100 - spawnPos.y * 10);
-        
+        pooledObject.GetComponent<RandomSpawner>().speed = speed;
         if (pooledObject != null)
         {
             pooledObject.transform.position = spawnPos;
