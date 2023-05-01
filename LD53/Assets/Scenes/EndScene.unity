@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,7 +297,6 @@ GameObject:
   - component: {fileID: 818920178}
   - component: {fileID: 818920177}
   - component: {fileID: 818920176}
-  - component: {fileID: 818920175}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -305,20 +304,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &818920175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818920174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba8d3d2440df1a489559b4510d51fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  buttonMenu: {fileID: 0}
 --- !u!114 &818920176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +451,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -222
       objectReference: {fileID: 0}
+    - target: {fileID: 8711414768839722125, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8711414769116983136, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -553,6 +542,10 @@ PrefabInstance:
     - target: {fileID: 8711414769116983139, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711414769764422126, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8711414769764422127, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
       propertyPath: m_AnchoredPosition.x
