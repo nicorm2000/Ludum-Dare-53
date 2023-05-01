@@ -9,7 +9,6 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private int hp = 0;
     [SerializeField] private LevelProgress levelProgress = null;
     [SerializeField] private int[] levelDuration = new int[8];
-    [SerializeField] private TMP_Text extraHp;
     [SerializeField] private Movement.PlayerMovement player;
     [SerializeField] private Animator animPlayer;
     [SerializeField] private SoulSpawner spawner;
@@ -19,7 +18,7 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private Transform endpos;
 
 
-    public GameObject[] hearts;
+    [SerializeField] private GameObject[] onboardSouls;
 
     void Start()
     {
@@ -32,14 +31,6 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     private void Update()
     {
         levelProgress.Update();
-        if (hp > 3)
-        {
-            extraHp.text = "+" + (hp - 3).ToString();
-        }
-        else
-        {
-            extraHp.text = "+0";
-        }
     }
 
     private void initPlayer()
@@ -63,29 +54,9 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
             GameOverManager.Get()?.GameOver();
         }
 
-        switch (hp)
-        {
-            case 0:
-                hearts[0].gameObject.SetActive(false);
-                break;
+        onboardSouls[hp].gameObject.SetActive(false);
+        onboardSouls[hp-1].gameObject.SetActive(true);
 
-            case 1:
-                hearts[0].gameObject.SetActive(true);
-                hearts[1].gameObject.SetActive(false);
-                break;
-
-            case 2:
-                hearts[0].gameObject.SetActive(true);
-                hearts[1].gameObject.SetActive(true);
-                hearts[2].gameObject.SetActive(false);
-                break;
-
-            case 3:
-                hearts[0].gameObject.SetActive(true);
-                hearts[1].gameObject.SetActive(true);
-                hearts[2].gameObject.SetActive(true);
-                break;
-        }
     }
     private void Win()
     {
