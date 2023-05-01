@@ -8,6 +8,9 @@ namespace Movement
     {
         private Rigidbody2D _rigidbody2D;
 
+        private SpriteRenderer sR;
+        private SpriteRenderer sRboat;
+
         private Vector2 _movementInput;
 
         [Header("Animation")]
@@ -19,9 +22,11 @@ namespace Movement
         [SerializeField] private float maxSpeed;
         [SerializeField] private float decSpeed;
 
+
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+            sR = GetComponent<SpriteRenderer>();
         }
 
         private void Start()
@@ -57,7 +62,8 @@ namespace Movement
             }
             _velocity += _movementInput.normalized * Mathf.Clamp(_movementInput.magnitude * accSpeed, -maxSpeed, maxSpeed);
             _rigidbody2D.velocity = _velocity;
-
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y * 0.5f);
+            sR.sortingOrder = Mathf.RoundToInt(transform.position.z * 100);
             //Animation trigger
             animator.SetFloat("Movement Input", _movementInput.x);
         }

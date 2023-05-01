@@ -10,6 +10,7 @@ namespace EnemyController
 
         float timer;
 
+       
         private void Update()
         {
             if (timer > maxTime)
