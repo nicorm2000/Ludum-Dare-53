@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 {
+    [SerializeField] public int lvl;
     [SerializeField] private int hp = 0;
     [SerializeField] private LevelProgress levelProgress = null;
     [SerializeField] private int[] levelDuration = new int[8];
+    [SerializeField] private int[] levelEnemies = new int[8];
+    [SerializeField] private int[] levelSouls = new int[8];
+    [SerializeField] private int[] levelSpeed = new int[8];
+    [SerializeField] private int[] levelrandomization = new int[8];
     [SerializeField] private Movement.PlayerMovement player;
     [SerializeField] private Animator animPlayer;
     [SerializeField] private SoulSpawner spawner;
@@ -17,13 +22,21 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private Animator puerto2;
     [SerializeField] private Transform endpos;
     [SerializeField] private ParticleSystem PS;
-    private ParticleSystem.MainModule MainPS;
-
-
+    
     [SerializeField] private GameObject[] onboardSouls;
+    private ParticleSystem.MainModule MainPS;
+    [SerializeField] private GameObject Background1;
+    [SerializeField] private GameObject Background2;
+    [SerializeField] private GameObject BackgroundLine1;
+    [SerializeField] private GameObject BackgroundLine2;
 
     void Start()
     {
+        
+        Background1.GetComponent<BgTP>().speed = 0;
+        Background2.GetComponent<BgTP>().speed = 0;
+        BackgroundLine1.GetComponent<BgTP>().speed = 0;
+        BackgroundLine2.GetComponent<BgTP>().speed = 0;
         MainPS = PS.main;
         PS.Stop();
         MainPS.startSpeed = 0;
@@ -48,11 +61,19 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     private void StartPlayer()
     {
         player.enabled = true;
+
         spawner.enabled = true;
+        spawner.SetupSpawner(levelEnemies[lvl], levelSouls[lvl], levelDuration[lvl], levelSpeed[lvl], levelrandomization[lvl]);
+        Debug.Log(levelEnemies[lvl]+"; "+ levelSouls[lvl] + "; " + levelDuration[lvl] + "; " + levelrandomization[lvl]);
         puerto1.Play("Start");
         PS.Stop();
-        MainPS.startSpeed = 3;
+        MainPS.startSpeed = levelSpeed[lvl];
         PS.Play();
+        Background1.GetComponent<BgTP>().speed = levelSpeed[lvl] * 0.6f;
+        Background2.GetComponent<BgTP>().speed = levelSpeed[lvl] * 0.6f;
+        BackgroundLine1.GetComponent<BgTP>().speed = levelSpeed[lvl];
+        BackgroundLine2.GetComponent<BgTP>().speed = levelSpeed[lvl];
+        levelProgress = new LevelProgress(() => { Win(); }, levelDuration[0]);
     }
 
     public void ModifyHp(int hpModifier)
@@ -69,13 +90,20 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     }
     private void Win()
     {
+        
         spawner.enabled = false;
         if (puerto2!=null)
         puerto2.Play("Start");
-        Invoke("InvokeCorrutine", 1);
+        Invoke("InvokeCorrutine", 6);
     }
     private void InvokeCorrutine()
     {
+        PS.Stop();
+        Background1.GetComponent<BgTP>().speed = 0;
+        Background2.GetComponent<BgTP>().speed = 0;
+        BackgroundLine1.GetComponent<BgTP>().speed = 0;
+        BackgroundLine2.GetComponent<BgTP>().speed = 0;
+        PS.Play();
         StartCoroutine(playerLerp());
     }
 
@@ -87,18 +115,20 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         do
         {
             
-            if (cTime >= 1)
+            if (cTime >= 2)
             {
-                cTime = 1;
+                cTime = 2;
             }
             player.transform.position = Vector3.Lerp(pos, endpos, cTime);
-            if (cTime != 1)
+            
+            if (cTime != 2)
             {
                 cTime += Time.deltaTime;
                 yield return null;
             }
-        } while (cTime != 1);
+        } while (cTime != 2);
         GameManager.Get().score = hp;
+        yield return new WaitForSeconds(1);
         Debug.Log("Game over");
         SceneManager.LoadScene(2);
     }

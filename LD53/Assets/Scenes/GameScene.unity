@@ -694,6 +694,69 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &497635640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497635641}
+  - component: {fileID: 497635642}
+  m_Layer: 8
+  m_Name: Player Area (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!224 &497635641
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497635640}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071067, w: 0.70710695}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.390376, y: 108.20003, z: 5.0631013}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 782628376}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.36, y: -1.68}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &497635642
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497635640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0032595787, y: 0.08670428}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.24}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11073689, y: 0.06633411}
+  m_EdgeRadius: 0
 --- !u!1 &608588735
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,11 +787,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
+  lvl: 0
   hp: 0
   levelProgress:
     finalTime: 0
     DeltaTime: 0
-  levelDuration: 1e000000
+  levelDuration: 780000001e0000001e0000001e0000001e0000001e0000001e0000001e000000
+  levelEnemies: 2800000000000000000000000000000000000000000000000000000000000000
+  levelSouls: 0600000000000000000000000000000000000000000000000000000000000000
+  levelSpeed: 0300000000000000000000000000000000000000000000000000000000000000
+  levelrandomization: 0100000000000000000000000000000000000000000000000000000000000000
   player: {fileID: 1906135462}
   animPlayer: {fileID: 790410020}
   spawner: {fileID: 632753594}
@@ -747,6 +815,10 @@ MonoBehaviour:
   - {fileID: 2097243213}
   - {fileID: 1048875684}
   - {fileID: 1025620737}
+  Background1: {fileID: 2109367713}
+  Background2: {fileID: 1703127478}
+  BackgroundLine1: {fileID: 371789634}
+  BackgroundLine2: {fileID: 1056332969}
 --- !u!4 &608588737
 Transform:
   m_ObjectHideFlags: 0
@@ -1042,7 +1114,8 @@ Transform:
   m_LocalPosition: {x: -3.5478003, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 0.93500006, z: 9.35}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 497635641}
   m_Father: {fileID: 1210964761}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1249,12 +1322,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881647790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.19, y: -3.09, z: 0}
+  m_LocalPosition: {x: -0.92, y: -2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1503815956}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -2269,6 +2342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.93500006, z: 9.35}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1907611982}
   - {fileID: 881647791}
   m_Father: {fileID: 1210964761}
   m_RootOrder: 2
@@ -2667,6 +2741,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d62f94f39dd1f48a77c34fb58fc4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1907611981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907611982}
+  - component: {fileID: 1907611983}
+  m_Layer: 8
+  m_Name: Player Area (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!224 &1907611982
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907611981}
+  m_LocalRotation: {x: 0, y: 0, z: -0.37864852, w: 0.92554057}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.91, y: 59.49651, z: 5.0631013}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1503815956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -44.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6.71, y: -2.45}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1907611983
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907611981}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.24}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23, y: 0.23}
+  m_EdgeRadius: 0
 --- !u!1 &1997808093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,7 +3124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.09, y: 0.07}
+  m_AnchoredPosition: {x: -11.44, y: 0.07}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &646000718657072798
@@ -3219,7 +3356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.14, y: -5.97}
+  m_AnchoredPosition: {x: -0.14, y: -6.28}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1134170539901764919
@@ -3239,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1134170540130699971, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1134170540130699971, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3278,14 +3415,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1225925723}
     - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
-      propertyPath: heightRange
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
-      propertyPath: maxTimeSoul
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
       propertyPath: obstaclePool
       value: 
       objectReference: {fileID: 1223356011}
@@ -3302,6 +3431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 790410019, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 970680276, guid: da78211055e0232439ad37ee2b744f5e, type: 3}
       propertyPath: pauseMenu
       value: 

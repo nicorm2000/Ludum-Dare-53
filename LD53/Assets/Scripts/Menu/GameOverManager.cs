@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 namespace Menu
 {
     public class GameOverManager : MonoBehaviourSingleton<GameOverManager>
     {
+        [SerializeField] private TextMeshProUGUI text;
         public void GameOver()
         {
             Time.timeScale = 0;
             //PauseManager.isPause = true;
             gameObject.SetActive(true);
+            text.text = new string("Souls delivered: " + GameManager.Get().score);
         }
         public void RestartGame()
         {

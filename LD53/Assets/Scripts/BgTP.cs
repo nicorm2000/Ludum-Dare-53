@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BgTP : MonoBehaviour
 {
-    [SerializeField] float speed = 2f;
+    public float speed = 2f;
     [SerializeField] float distanceToTPX = 153.5f;
     [SerializeField] float distanceToTPY = 1.5f;
 

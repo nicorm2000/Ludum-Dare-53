@@ -48,4 +48,5 @@ MonoBehaviour:
   obstaclePool: {fileID: 0}
   maxTimeSoul: 10
   maxTimeObstacle: 5
+  randomization: 5
   heightRange: 4

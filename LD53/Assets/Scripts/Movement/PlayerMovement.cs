@@ -58,7 +58,7 @@ namespace Movement
             _rigidbody2D.velocity = _velocity;
             
             sR.sortingOrder = Mathf.RoundToInt(100 - transform.position.y * 10);
-            sRboat.sortingOrder = Mathf.RoundToInt(100 - transform.position.y * 10);
+            sRboat.sortingOrder = Mathf.RoundToInt(99 - transform.position.y * 10);
             //Animation trigger
             animator.SetFloat("Movement Input", _movementInput.x);
         }
