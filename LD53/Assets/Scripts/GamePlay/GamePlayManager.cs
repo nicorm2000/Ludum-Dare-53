@@ -100,11 +100,13 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     private void InvokeCorrutine()
     {
         PS.Stop();
+        MainPS.startSpeed = 1;
+        PS.Play();
         Background1.GetComponent<BgTP>().speed = 0;
         Background2.GetComponent<BgTP>().speed = 0;
         BackgroundLine1.GetComponent<BgTP>().speed = 0;
         BackgroundLine2.GetComponent<BgTP>().speed = 0;
-        PS.Play();
+        
         StartCoroutine(playerLerp());
     }
 
