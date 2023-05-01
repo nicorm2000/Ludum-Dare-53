@@ -525,7 +525,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba941fc4b583db54fa8a7caf34b81151, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2a13ea8cbc9aa24a8efeb26692dbef6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -544,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371789634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.46, z: 0}
+  m_LocalPosition: {x: 0, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -933,6 +933,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1223356011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 767080055604564468, guid: 07f32da0ba552c448a84284f39bb6db6, type: 3}
+  m_PrefabInstance: {fileID: 8534265131526905932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21b789779741ba4cab40a607d213220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1225925723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8992276497133710537, guid: 64c3f3c8decd2eb4b9d2b1226e93415c, type: 3}
+  m_PrefabInstance: {fileID: 8992276496876922871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21b789779741ba4cab40a607d213220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1545654569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1742,9 +1764,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
+      propertyPath: soulPool
+      value: 
+      objectReference: {fileID: 1225925723}
+    - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
       propertyPath: heightRange
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
+      propertyPath: maxTimeSoul
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134170540130699972, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
+      propertyPath: obstaclePool
+      value: 
+      objectReference: {fileID: 1223356011}
     - target: {fileID: 1134170540130699973, guid: ad72ffaafea9d514fa34eab47de848d8, type: 3}
       propertyPath: m_Name
       value: SoulSpawner

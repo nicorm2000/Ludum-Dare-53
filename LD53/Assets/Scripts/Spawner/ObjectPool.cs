@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    public ObjectPool instance;
-
     [SerializeField] List<GameObject> pooledObjects = new List<GameObject>();
     
     public GameObject GetPooledObject()
