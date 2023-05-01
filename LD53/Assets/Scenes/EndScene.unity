@@ -574,8 +574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba8d3d2440df1a489559b4510d51fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  buttonMenu: {fileID: 0}
+  scoreText: {fileID: 111683590}
+  buttonMenu: {fileID: 184688270}
 --- !u!114 &818920176
 MonoBehaviour:
   m_ObjectHideFlags: 0
