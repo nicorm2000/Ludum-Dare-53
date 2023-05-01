@@ -14,7 +14,7 @@ namespace Movement
         private Vector2 _movementInput;
 
         [Header("Animation")]
-        [SerializeField] Animator animator;
+        [SerializeField] private Animator animator;
 
 
         [Header("Movement Speed")]
@@ -29,11 +29,6 @@ namespace Movement
             sR = GetComponent<SpriteRenderer>();
             sRboat = gameObject.GetComponentsInChildren<SpriteRenderer>()[1];
             Debug.Log(sRboat.name);
-        }
-
-        private void Start()
-        {
-            animator = GetComponent<Animator>();
         }
 
         private void FixedUpdate()
