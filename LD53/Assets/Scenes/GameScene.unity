@@ -787,6 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
+  GOM: {fileID: 2123366432}
   lvl: 0
   hp: 0
   levelProgress:
@@ -3111,6 +3112,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8711414769116983139, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
   m_PrefabInstance: {fileID: 814668110}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2123366432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2123366432, guid: 6811fc1cfd0c70e4cb8b1df3241f9459, type: 3}
+  m_PrefabInstance: {fileID: 814668110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f21c55dd73226499bc6b08306147e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &646000718657072797
 RectTransform:
   m_ObjectHideFlags: 0

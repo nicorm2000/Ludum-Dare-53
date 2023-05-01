@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 {
+    [SerializeField] private GameOverManager GOM;
     [SerializeField] public int lvl;
     [SerializeField] private int hp = 0;
     [SerializeField] private LevelProgress levelProgress = null;
@@ -17,6 +18,7 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
     [SerializeField] private Movement.PlayerMovement player;
     [SerializeField] private Animator animPlayer;
     [SerializeField] private SoulSpawner spawner;
+    
     [SerializeField] private GameObject[] souls;
     [SerializeField] private Animator puerto1;
     [SerializeField] private Animator puerto2;
@@ -32,7 +34,6 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 
     void Start()
     {
-        
         Background1.GetComponent<BgTP>().speed = 0;
         Background2.GetComponent<BgTP>().speed = 0;
         BackgroundLine1.GetComponent<BgTP>().speed = 0;
@@ -81,8 +82,7 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         hp += hpModifier;
         if (hp <= 0)
         {
-            GameManager.Get().score = hp;
-            SceneManager.LoadScene(2);
+            GOM.GameOver();
         }
 
         onboardSouls[hp].gameObject.SetActive(false);
