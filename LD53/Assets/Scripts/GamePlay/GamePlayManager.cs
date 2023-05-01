@@ -81,7 +81,8 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         hp += hpModifier;
         if (hp <= 0)
         {
-            GameOverManager.Get()?.GameOver();
+            GameManager.Get().score = hp;
+            SceneManager.LoadScene(2);
         }
 
         onboardSouls[hp].gameObject.SetActive(false);
