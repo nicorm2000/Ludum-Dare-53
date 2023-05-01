@@ -104,16 +104,20 @@ public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
         Vector3 pos = player.transform.position;
         Vector3 endpos = this.endpos.position;
         float cTime=0;
-        while (pos!=endpos)
+        do
         {
-            if (cTime>=1)
+            
+            if (cTime >= 1)
             {
                 cTime = 1;
             }
             player.transform.position = Vector3.Lerp(pos, endpos, cTime);
-            cTime += Time.deltaTime;
-            yield return null;
-        }
+            if (cTime != 1)
+            {
+                cTime += Time.deltaTime;
+                yield return null;
+            }
+        } while (cTime != 1);
         GameManager.Get().score = hp;
         Debug.Log("Game over");
         SceneManager.LoadScene(2);
