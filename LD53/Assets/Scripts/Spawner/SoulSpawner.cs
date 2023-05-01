@@ -35,9 +35,9 @@ public class SoulSpawner : MonoBehaviour
     private void Spawn(ObjectPool pool)
     {
         Vector3 spawnPos = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
-        spawnPos = new Vector3(spawnPos.x, spawnPos.y, spawnPos.y * 0.5f);
         GameObject pooledObject = pool.GetPooledObject();
-        pooledObject.GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(spawnPos.z * 100);
+        pooledObject.GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(100 - spawnPos.y * 10);
+        Debug.Log(pooledObject.GetComponent<SpriteRenderer>().sortingOrder + " : " + Mathf.RoundToInt(100 - spawnPos.y * 10));
         if (pooledObject != null)
         {
             pooledObject.transform.position = spawnPos;

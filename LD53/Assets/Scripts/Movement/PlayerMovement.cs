@@ -27,6 +27,8 @@ namespace Movement
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
             sR = GetComponent<SpriteRenderer>();
+            sRboat = gameObject.GetComponentsInChildren<SpriteRenderer>()[1];
+            Debug.Log(sRboat.name);
         }
 
         private void Start()
@@ -62,8 +64,9 @@ namespace Movement
             }
             _velocity += _movementInput.normalized * Mathf.Clamp(_movementInput.magnitude * accSpeed, -maxSpeed, maxSpeed);
             _rigidbody2D.velocity = _velocity;
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y * 0.5f);
-            sR.sortingOrder = Mathf.RoundToInt(transform.position.z * 100);
+            
+            sR.sortingOrder = Mathf.RoundToInt(100 - transform.position.y * 10);
+            sRboat.sortingOrder = Mathf.RoundToInt(100 - transform.position.y * 10);
             //Animation trigger
             animator.SetFloat("Movement Input", _movementInput.x);
         }
