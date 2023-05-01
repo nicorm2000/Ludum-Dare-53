@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GamePlayManager : MonoBehaviourSingleton<GamePlayManager>
 {
-    [SerializeField] private int hp = 3;
+    [SerializeField] private int hp = 0;
     [SerializeField] private LevelProgress levelProgress = null;
     [SerializeField] private int[] levelDuration = new int[8];
     [SerializeField] private TMP_Text extraHp;
