@@ -11,28 +11,25 @@ public class SoulSpawner : MonoBehaviour
     [SerializeField] float maxTimeObstacle = 5f;
     [SerializeField] float heightRange = 0.5f;
 
-    float timer;
-
-    private void Start()
-    {
-        Spawn();
-    }
+    float timerSoul;
+    float timerObstacle;
 
     private void Update()
     {
-        if (timer > maxTimeSoul)
+        if (timerSoul > maxTimeSoul)
         {
-            Spawn();
-            timer = 0;
+            Spawn(soulPool);
+            timerSoul = 0;
         }
 
-        if (timer > maxTimeObstacle)
+        if (timerObstacle > maxTimeObstacle)
         {
-            Spawn();
-            timer = 0;
+            Spawn(obstaclePool);
+            timerObstacle = 0;
         }
 
-        timer += Time.deltaTime;
+        timerSoul += Time.deltaTime;
+        timerObstacle += Time.deltaTime;
     }
 
     private void Spawn(ObjectPool pool)
