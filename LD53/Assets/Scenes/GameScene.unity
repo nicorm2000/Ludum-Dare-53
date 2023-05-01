@@ -774,7 +774,7 @@ MonoBehaviour:
   levelProgress:
     finalTime: 0
     DeltaTime: 0
-  levelDuration: 0a000000
+  levelDuration: 64000000
   extraHp: {fileID: 302977803}
   player: {fileID: 1906135462}
   animPlayer: {fileID: 790410020}

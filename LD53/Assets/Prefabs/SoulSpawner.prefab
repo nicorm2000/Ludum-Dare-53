@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d523a9d21b7834ea82223cf75be56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
-  heightRange: 5
-  timeToDie: 15
-  soul: {fileID: 266631151658070310, guid: 8d38c956199b7f54180181c24b05099c, type: 3}
+  soulPool: {fileID: 0}
+  obstaclePool: {fileID: 0}
+  maxTimeSoul: 10
+  maxTimeObstacle: 5
+  heightRange: 4
