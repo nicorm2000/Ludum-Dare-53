@@ -18,7 +18,7 @@ namespace Menu
         {
             Time.timeScale = 1;
             //PauseManager.isPause = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(1);
         }
         public void LoadMenu()
         {
