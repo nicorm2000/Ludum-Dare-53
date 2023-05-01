@@ -12,16 +12,13 @@ public class VolumeManager : MonoBehaviourSingleton<VolumeManager>
     public void SetVolume(float newVolumeValue)
     {
         this.masterVolume = newVolumeValue;
+        _master.setVolume(masterVolume);
     }
 
     private new void Awake()
     {
         base.Awake();
         _master = FMODUnity.RuntimeManager.GetBus("bus:/");
-    }
-
-    private void Update()
-    {
-        _master.setVolume(masterVolume);
+        _master.setVolume(0.25f);
     }
 }
